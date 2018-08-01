@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.093" />
 
-    <com.google.android.gms.ads.AdView
+<!--    <com.google.android.gms.ads.AdView
 
         android:id="@+id/adView"
         android:layout_width="wrap_content"
@@ -36,7 +36,27 @@
         app:layout_constraintStart_toStartOf="parent"
 
         adSize="BANNER"
-        adUnitId="YOUR_AD_UNIT_ID"/>
+        adUnitId="YOUR_AD_UNIT_ID"/>-->
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:color/holo_green_dark"
+        android:minHeight="30dp"
+        android:minWidth="100dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="YOUR_AD_UNIT_ID"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
 
     <ImageView
         android:id="@+id/imageView"
